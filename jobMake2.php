@@ -106,7 +106,7 @@ if($_POST['jobUpd'] != 0){
 				echo "Q:<input type='text' size='20' NAME='expert2[]' style='font-family:Tahoma; ime-mode:auto;' pattern='^[ぁ-んァ-ヶーa-zA-Z0-9一-龠０-９、。! ！\n\r\s]+$' title='入力してください' ><br /><br />";
 				echo "A:<textarea name='expert3[]' cols='50' rows='5' style='font-family:Tahoma; ime-mode:auto;' pattern='^[ぁ-んァ-ヶーa-zA-Z0-9一-龠０-９、。! ！\n\r\s]+$' title='入力してください' ></textarea><br /><br />";
 			}
-				echo "取材日：<input type='text' size='20' NAME='expert[]' ><br /><br />";		
+				echo "取材日：<input type='date' size='20' NAME='expert[]' ><br /><br />";		
 				echo "取材者：<input type='text' size='20' NAME='expert[]' style='font-family:Tahoma; ime-mode:auto;' pattern='^[ぁ-んァ-ヶーa-zA-Z0-9一-龠０-９、。! ！\n\r\s]+$' title='入力してください' required><br /><br />";
 				echo "<br /></div><center><input type =submit value=追加>";
 				echo "</form>";
@@ -123,7 +123,7 @@ if($_POST['jobUpd'] != 0){
 				echo "見出し：<input type='text' size='20' NAME='report2[]' style='font-family:Tahoma; ime-mode:auto;' pattern='^[ぁ-んァ-ヶーa-zA-Z0-9一-龠０-９、。! ！\n\r\s]+$' title='入力してください' ><br /><br />";		
 				echo "<textarea name='report3[]' cols='50' rows='5' style='font-family:Tahoma; ime-mode:auto;' pattern='^[ぁ-んァ-ヶーa-zA-Z0-9一-龠０-９、。! ！\n\r\s]+$' title='入力してください' ></textarea><br /><br />";
 			}
-				echo "取材日：<input type='text' size='20' NAME='report[]' ><br /><br />";		
+				echo "取材日：<input type='date' size='20' NAME='report[]' ><br /><br />";		
 				echo "取材者：<input type='text' size='20' NAME='report[]' style='font-family:Tahoma; ime-mode:auto;' pattern='^[ぁ-んァ-ヶーa-zA-Z0-9一-龠０-９、。! ！\n\r\s]+$' title='入力してください' required><br /><br />";
 				echo "<br /></div><center><input type =submit value=追加>";
 				echo "</form>";
