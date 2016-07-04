@@ -1305,9 +1305,9 @@ function workrpdateInsert($report2,$report3,$upfile5,$work){//お仕事スタジ
 		if (is_uploaded_file($_FILES["upfile5"]["tmp_name"][$i])) {
 			$fileID = picSet2($upfile5,$i);
 			//SQL文をセット//
-			$result_flag = mysql_query("INSERT INTO workrpdate (WHEAD,REPORT,WIMAGE,WORKID) VALUES ('$report2[$i]','$report3[$i]','$fileID','$work')");
+			$result_flag = mysql_query("INSERT INTO workrpdate (WCHEAD,REPORT,WIMAGE,WORKID) VALUES ('$report2[$i]','$report3[$i]','$fileID','$work')");
 			}else{
-			$result_flag = mysql_query("INSERT INTO workrpdate (WHEAD,REPORT,WIMAGE,WORKID) VALUES ('$report2[$i]','$report3[$i]','0','$work')");
+			$result_flag = mysql_query("INSERT INTO workrpdate (WCHEAD,REPORT,WIMAGE,WORKID) VALUES ('$report2[$i]','$report3[$i]','0','$work')");
 		}
 			if (!$result_flag) {
 	    	die('INSERTクエリーが失敗しました。'.mysql_error());
