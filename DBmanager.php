@@ -1365,6 +1365,35 @@ function interviewUpdate($interview,$time,$KanriName,$studentID){//学生イン�
 }
 
 ////////////////////追加
+function expertUpdate($expert,$time,$KanriName,$expertID){//専門家のコメントの更新
+
+    try {
+	//SQL文をセット//
+		$result_flag = mysql_query("UPDATE expert SET EHEAD = '$expert[0]' , EXNAME = '$expert[1]' , EDATE = '$expert[2]' , ENAME = '$expert[3]',EUPTIME = '$time',EUPNAME = '$KanriName' WHERE EXPERTID = '$expertID'");
+			if (!$result_flag) {
+	    	die('UPDATEクエリーが失敗しました。'.mysql_error());
+			}
+    } catch (Exception $e) {
+            echo ('システムエラーが発生しました');
+    }
+}
+
+////////////////////追加
+function reportUpdate($report,$time,$KanriName,$workID){//お仕事レポートの更新
+
+    try {
+	//SQL文をセット//
+		$result_flag = mysql_query("UPDATE workrp SET WHEAD = '$report[0]' , WDATE = '$report[1]' , WNAME = '$report[2]',WUPTIME = '$time',WUPNAME = '$KanriName' WHERE WORKID = '$workID'");
+			if (!$result_flag) {
+	    	die('UPDATEクエリーが失敗しました。'.mysql_error());
+			}
+    } catch (Exception $e) {
+            echo ('システムエラーが発生しました');
+    }
+}
+
+
+////////////////////追加
 function stviewlist2($studentid){//学生インタビュー情報取得
 
     try {
